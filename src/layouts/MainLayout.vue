@@ -15,7 +15,7 @@
           Video Chat Demo
         </q-toolbar-title>
 
-        <div>Author: Aishan Li</div>
+        <div>Author: 李艾珊，赵冬阳，赵通</div>
       </q-toolbar>
     </q-header>
 

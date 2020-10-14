@@ -1,14 +1,14 @@
 <template>
   <q-page padding>
-    <div class="my-card fixed-left" style="width: 50%;height: 79%;margin-top:100px;margin-left:10%;margin-bottom:10%;border-style:groove;">
-      <video id="remoteVideo" autoplay muted style="width: 98%; height: 98%;"></video>
+    <div class="my-card fixed-left" style="width: 50%;height: 79%;margin-top:100px;margin-left:10%;margin-bottom:10%;border-style:groove;border-radius:3.5em;border-color: dodgerblue">
+      <video id="remoteVideo" autoplay muted style="width: 99%; height: 98%;"></video>
     </div>
-    <div class="my-card fixed-right" style="width: 25%;height: 28%;margin-top:100px;margin-right:12%;border-style:groove;">
-      <video id="localVideo" autoplay muted style="width: 98%; height: 98%;"></video>
+    <div class="my-card fixed-right" style="width: 25%;height: 28%;margin-top:100px;margin-right:12%;border-style:groove;border-radius:1.5em;border-color: dodgerblue">
+      <video id="localVideo" autoplay muted style="width: 99%; height: 99%;"></video>
     </div>
-    <q-card class="my-card fixed-bottom-right" style="width: 25%;height: 49%; bottom: 9%; right: 12%">
+    <q-card class="my-card fixed-bottom-right" style="width: 25%;height: 49%; bottom: 9%; right: 12%;border-style:groove;border-radius:1.5em;border-color: dodgerblue">
     	<q-card-section>
-	        <div class="text-subtitle2">Room ID: {{this.roomName}}</div>
+	        <div class="text-subtitle2" style="font:bold 20px; text-align:center; color:#1776D1" >Room ID: {{this.$store.state.hashnum.roomHash}}</div>
       	</q-card-section>
       	<q-separator/>
       	<q-scroll-area style="height: 60%;" ref="chatScroll">
@@ -28,6 +28,8 @@
 	    <q-editor
 	      v-model="editor"
 	      min-height="18%"
+	      toolbar-bg="primary"
+	      toolbar-text-color="white"
 
 	      :definitions="{
 	        send: {
@@ -38,7 +40,6 @@
 	        }
 	      }"
 	      :toolbar="[
-	        ['bold', 'italic', 'strike', 'underline'],
 	        ['send']
 	      ]"
 	    />
@@ -219,7 +220,7 @@ export default {
 	  	  	_avatar = 'https://cdn.quasar.dev/img/avatar1.jpg';
 	  	  	_sent = true;
 	  	  } else {
-	  	  	_name = 'other';
+	  	  	_name = 'chat partner';
 	  	  	_avatar = 'https://cdn.quasar.dev/img/avatar2.jpg';
 	  	  }
           this.chat_data.push([_name, _avatar, options.content, _sent]);

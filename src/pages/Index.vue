@@ -4,7 +4,7 @@
       alt="Quasar logo"
       src="~assets/quasar-logo-full.svg"
     > -->
-    <q-card dark bordered class="bg-primary my-card" style="width: 40%;height: 88%;margin-top:70px;margin-left:3%;margin-bottom:20px;">
+    <q-card dark bordered class="bg-primary my-card" style="width: 40%;height: 88%;margin-top:10px;margin-left:3%;margin-bottom:20px;">
       <q-card-section>
         <div class="text-h6 text-white">登陆房间</div>
         <!-- <div class="text-subtitle2">by John Doe</div> -->
