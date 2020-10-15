@@ -5,7 +5,7 @@ A Quasar Framework app
 ## Install and start From Docker (Recommended)
 ```
 (host)$ cd <host_absolute_dir_path>
-(host)$ git clone git@github.com:yyf710670079/video_chat.git
+(host)$ git clone git@github.com:Asli666/video_chat.git
 (host)$ docker pull node:latest
 (host)$ docker run -it -p 8080:8080 -v <host_absolute_dir_path>/video_chat:/workspace/video_chat node:latest /bin/bash
 (container)$ npm install -g @quasar/cli
