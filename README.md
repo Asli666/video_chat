@@ -1,7 +1,8 @@
-#高级网络_小组作业1
-##项目介绍
+# 高级网络_小组作业1
+
+## 项目介绍
 调用WebRTC实现基于浏览器的双人视频聊天应用，兼具文字聊天功能。
-##技术框架及依赖包
+## 技术框架及依赖包
 前端借助Vue.js与quasar框架，后端使用js调用WebRTC协议API。
 
 引擎：
@@ -13,8 +14,8 @@
 * @quasar/extras: ^1.0.0
 * quasar: ^1.0.0
 
-##使用
-###使用docker启动项目（推荐）
+## 使用
+### 使用docker启动项目（推荐）
 ```
 (host)$ cd <host_absolute_dir_path>
 (host)$ git clone git@github.com:Asli666/video_chat.git
@@ -57,10 +58,10 @@ chrome://flags/#unsafely-treat-insecure-origin-as-secure
 http://<前端服务器所在的内网ip>：8080
 ```
 
-##架构
+## 架构
 tbd
 
-##API
+## API
 建立一个Google的公共STUN服务器
 ```
 const configuration = {
