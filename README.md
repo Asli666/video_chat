@@ -58,9 +58,6 @@ chrome://flags/#unsafely-treat-insecure-origin-as-secure
 http://<前端服务器所在的内网ip>：8080
 ```
 
-## 架构
-tbd
-
 ## API
 建立一个Google的公共STUN服务器
 ```
@@ -74,5 +71,3 @@ const configuration = {
 ```
 const drone = new ScaleDrone('CHANNEL_ID_FROM_SCALEDRONE');
 ```
-
-tbd
